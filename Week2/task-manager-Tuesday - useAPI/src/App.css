@@ -1,0 +1,12 @@
+/* App.module.css */
+nav {
+  padding: 10px;
+  background-color: #ddd;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+

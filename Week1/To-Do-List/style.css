@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://i.pinimg.com/736x/84/a0/65/84a06571171c3215f809ab91b12f2bba.jpg');
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#list {
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#list input {
+    height: 5vh;
+    width: 80%;
+    border-radius: 1.3rem;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+}
+
+#btn {
+    height: 5vh;
+    width: 5vw;
+    border-radius: 0.4rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn:hover {
+    background-color: #45a049;
+}
+
+#btn:active {
+    background-color: #388e3c;
+}
+
+.task {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.7rem;
+    align-items: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task li {
+    list-style: none;
+    font-size: 1rem;
+}
+
+.items {
+    width: 85%;
+}
+
+.dbtn,
+.closebutton {
+    height: 3vh;
+    width: 3vw;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.dbtn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.closebutton {
+    background-color: #f44336;
+    color: white;
+}
+
+.dbtn:hover {
+    background-color: #45a049;
+}
+
+.closebutton:hover {
+    background-color: #d32f2f;
+}
