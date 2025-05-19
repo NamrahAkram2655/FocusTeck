@@ -1,76 +1,100 @@
-/* TaskPage.css */
-
 .task-container {
   max-width: 600px;
   margin: 40px auto;
-  padding: 20px;
+  padding: 25px 30px;
   background-color: #fdfdfd;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
-h2 {
+.task-container h2 {
   text-align: center;
   color: #333;
+  margin-bottom: 20px;
+  font-weight: 700;
 }
 
-input {
+.task-container form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.task-container input {
   width: 70%;
-  padding: 10px;
-  margin-right: 10px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+  padding: 12px 14px;
+  margin-right: 12px;
   font-size: 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  outline-offset: 2px;
 }
 
-button {
-  padding: 10px 15px;
+.task-container input:focus {
+  border-color: #345019;
+  box-shadow: 0 0 6px rgba(46, 167, 100, 0.3);
+  outline: none;
+}
+
+.task-container button {
+  padding: 12px 18px;
   border: none;
   border-radius: 6px;
-  background-color: #007bff;
+  background-color: #18742f;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
 }
 
-button:hover {
-  background-color: #0056b3;
+.task-container button:hover {
+  background-color: #0a7737;
+  transform: translateY(-2px);
 }
 
-ul {
+.task-container button:active {
+  transform: translateY(0);
+}
+
+.task-container ul {
   list-style: none;
-  margin-top: 20px;
   padding: 0;
+  margin-top: 15px;
 }
 
-li {
+.task-container li {
   background: #f5f5f5;
-  margin-bottom: 12px;
-  padding: 12px 10px;
+  margin-bottom: 14px;
+  padding: 14px 16px;
   border-radius: 6px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: 0.3s;
+  transition: background-color 0.3s ease;
+  cursor: default;
 }
 
-li:hover {
+.task-container li:hover {
   background-color: #e9ecef;
 }
 
-li.completed {
+.task-container li.completed {
   text-decoration: line-through;
   color: #777;
 }
 
-.error {
-  color: red;
+.task-container .error {
+  color: #d32f2f;
   text-align: center;
-  margin: 10px 0;
+  margin: 12px 0;
+  font-weight: 600;
 }
 
-.loading {
+.task-container .loading {
   text-align: center;
   color: #007bff;
+  font-weight: 600;
 }

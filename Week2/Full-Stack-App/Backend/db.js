@@ -3,8 +3,8 @@ const {Pool} =require('pg');
 const pool  = new Pool({
     user: 'postgres',
     host: 'localhost',
-    database: 'demodb',
-    password: 'postgres',
+    database: 'task-Data',
+    password: 'nimra',
     port: 5432
 });
 
